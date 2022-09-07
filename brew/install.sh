@@ -2,6 +2,7 @@
 
 echo '下载Linuxbrew, 并设置国内源'
 cd ~ && \
+apt install -y build-essential procps curl file git && \
 export HOMEBREW_BREW_GIT_REMOTE="http://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git" && \  # put your Git mirror of Homebrew/brew here
 export HOMEBREW_CORE_GIT_REMOTE="http://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git" && \  # put your Git mirror of Homebrew/homebrew-core here
 echo "\n" | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && \
