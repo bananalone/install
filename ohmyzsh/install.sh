@@ -1,4 +1,3 @@
-echo '安装zsh和ohmyzsh'
 cd ~
 apt install -y zsh && \
 export REMOTE=https://ghproxy.com/https://github.com/ohmyzsh/ohmyzsh.git && \
