@@ -1,6 +1,6 @@
 cd ~
 
-if [ ! command -v zsh > /dev/null 2>&1 ]; then
+if ! command -v zsh > /dev/null 2>&1; then
     apt install -y vim
 fi
 
