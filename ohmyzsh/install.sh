@@ -1,7 +1,7 @@
  cd ~
 
  if ! command -v zsh > /dev/null 2>&1; then
-     apt install -y zsh
+     sudo apt install -y zsh
  fi
 
  if [ -d $HOME/.oh-my-zsh ]; then
@@ -13,4 +13,3 @@
  git clone https://ghproxy.com/https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
  git clone https://ghproxy.com/https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
  curl -fsSL https://ghproxy.com/https://raw.githubusercontent.com/bananalone/install/main/ohmyzsh/.zshrc -o $HOME/.zshrc
- chsh -s /bin/zsh

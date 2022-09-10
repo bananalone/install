@@ -1,5 +1,5 @@
 cd ~ && \
-apt install -y build-essential procps curl file git && \
+sudo apt install -y build-essential procps curl file git && \
 export HOMEBREW_BREW_GIT_REMOTE="http://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git" && \
 export HOMEBREW_CORE_GIT_REMOTE="http://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git" && \
 echo "\n" | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && \
