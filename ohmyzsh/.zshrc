@@ -110,7 +110,7 @@ source $ZSH/oh-my-zsh.sh
 # bananalone
 function bananalone
 {
-    if [ $COLUMNS -ge 56 ] && [ $LINES -ge 5 ]; then
+    if [ ${COLUMNS:-56} -ge 56 ] && [ ${LINES:-5} -ge 5 ]; then
         echo ' _                                   _                  '
         echo '| |__   __ _ _ __   __ _ _ __   __ _| | ___  _ __   ___ '
         echo '| '"'"'_ \ / _` | '"'"'_ \ / _` | '"'"'_ \ / _` | |/ _ \| '"'"'_ \ / _ \'
@@ -123,8 +123,7 @@ bananalone
 
 function ghproxy 
 {
-    git clone https://ghproxy.com/$1 $2
+    git clone https://ghproxy.com/$@
 }
-
 
 # more
