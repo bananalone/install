@@ -1,5 +1,3 @@
- cd ~
-
  if ! command -v zsh > /dev/null 2>&1; then
      sudo apt install -y zsh
  fi
